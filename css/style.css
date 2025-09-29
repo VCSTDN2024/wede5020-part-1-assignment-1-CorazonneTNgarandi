@@ -1,13 +1,18 @@
 * Reset & Base Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     background-color: #fff;
     color: #333;
   }
-  
+  :root{ 
+    --brand-green: #2ecc71;
+  --brand-dark: #2c3e50;
+  --accent: #e67e22;
+  --bg-light: #f4f6f7;
+  }
   a {
     text-decoration: none;
     color: #333;
@@ -15,6 +20,7 @@ body {
   
   h1, h2, h3, h4 {
     margin-top: 0;
+    color: #27ae60;
   }
   
   /* Header & Navigation */
@@ -47,13 +53,22 @@ body {
   
   /* Hero Section */
   .hero {
+    background: url('../images/Logo\ fitFeul\ Meals\ -\ Emblem\ Style.png') center/cover no-repeat;
+    color: white;
+    text-align: center;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    padding: 2em;
-    background-color: #f4f4f4;
+    padding: 5rem 1rem;
+    border-radius: 0 0 20px 20px;
   }
+  .hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero .btn {
+  margin: 0.5rem;
+  background: var(--accent);
+}
   
   .hero-text {
     flex: 1;
@@ -80,10 +95,11 @@ body {
     display: inline-block;
     border-radius: 4px;
     font-size: 1em;
+    text-decoration: none;
   }
   
   .btn:hover {
-    background-color: #555;
+    background-color: #219150;
   }
   
   /* Features Section */
@@ -128,10 +144,11 @@ body {
   
   .meals-grid {
     display: flex;
+    grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 1.5em;
-    margin-top: 1em;
+   padding: 2rem;
   }
   
   .meal {
@@ -213,6 +230,38 @@ body {
     display: block;
     margin-bottom: 0.3em;
   }
+  .testimonials {
+  background: var(--bg-light);
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.testimonial {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+.testimonial h4 {
+  margin-top: 1rem;
+  color: var(--brand-dark);
+}
+.cta-strip {
+  background: var(--brand-green);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.cta-strip h2 {
+  margin-bottom: 1rem;
+}
+
+
 
 
 
@@ -246,6 +295,7 @@ body {
   
     .features {
       flex-direction: column;
+      gap: 2rem;
       align-items: center;
     }
   
@@ -292,4 +342,17 @@ body {
       align-items: flex-start;
     }
   }
-  
+  .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 960px) {
+  .menu-toggle { display: block; }
+  .main-nav { display: none; }
+  .main-nav.open { display: block; }
+}
+
