@@ -1,16 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
+  <title>Request Custom Plan | FitFuel Meals</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Request Custom Plan | FitFuel Meals</title>
+  <meta name="description" content="FitFuel Meals - Nutritious, affordable meal prep in Johannesburg. Custom plans for weight loss, maintenance and muscle gain.">
+  <meta name="keywords" content="healthy meals, meal prep, Johannesburg, FitFuel Meals, diet plans, nutrition, weekly delivery">
+  <meta name="author" content="FitFuel Meals Team">
+  <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -29,15 +26,15 @@
   </header>
 
   <main>
-    <img src="images/Logo fitFeul Meals - Emblem Style.png"style="width: 200px; height: auto;" alt="images/Logo fitFeul Meals - Emblem Style.png">
+    <img src="images/Logo fitFeul Meals - Emblem Style.png" style="width: 200px; height: auto;" alt="FitFuel Meals logo">
     <section class="form-section">
       <h2>Tell us about your fitness goals</h2>
-      <form>
+      <form id="custom-plan-form" action="mailto:info@fitfuelmeals.co.za" method="post" enctype="text/plain">
         <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required />
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
 
         <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required />
+        <input type="email" id="email" name="email" placeholder="Your email address" required />
 
         <label for="goal">What is your fitness goal?</label>
         <select id="goal" name="goal">
@@ -61,10 +58,9 @@
       <p>Phone: +27 71 234 5678</p>
       <p>Address: Sandton, Johannesburg</p>
     </div>
-  </div>
-    <p>&copy; 2025 FitFuel Meals. All rights reserved.</p>
+    <p>&copy; <span class="current-year"></span> FitFuel Meals. All rights reserved.</p>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 </html>
-
