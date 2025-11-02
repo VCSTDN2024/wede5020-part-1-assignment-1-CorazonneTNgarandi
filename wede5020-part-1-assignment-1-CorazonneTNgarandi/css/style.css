@@ -1,0 +1,358 @@
+* Reset & Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+  }
+  :root{ 
+    --brand-green: #2ecc71;
+  --brand-dark: #2c3e50;
+  --accent: #e67e22;
+  --bg-light: #f4f6f7;
+  }
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  h1, h2, h3, h4 {
+    margin-top: 0;
+    color: #27ae60;
+  }
+  
+  /* Header & Navigation */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.2em;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('../images/Logo\ fitFeul\ Meals\ -\ Emblem\ Style.png') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 5rem 1rem;
+    border-radius: 0 0 20px 20px;
+  }
+  .hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero .btn {
+  margin: 0.5rem;
+  background: var(--accent);
+}
+  
+  .hero-text {
+    flex: 1;
+    padding-right: 2em;
+  }
+  
+  .hero-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Buttons */
+  .btn {
+    background-color: #333;
+    color: white;
+    padding: 0.7em 1.2em;
+    border: none;
+    margin-top: 1em;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 1em;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #219150;
+  }
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 2em;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    flex: 1;
+    margin: 1em;
+    min-width: 250px;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 2em;
+    background-color: #fafafa;
+  }
+  
+  .mission-vision {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    flex-wrap: wrap;
+  }
+  
+  .mission-vision div {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  /* Meals Preview / Menu Grid */
+  .meals-preview {
+    padding: 2em;
+    text-align: center;
+  }
+  
+  .meals-grid {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5em;
+   padding: 2rem;
+  }
+  
+  .meal {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1em;
+    width: 30%;
+    min-width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+  
+  /* Call-to-Action Section */
+  .cta {
+    text-align: center;
+    padding: 2em;
+    background-color: #f4f4f4;
+  }
+  
+  .cta p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+  
+  /* Forms (used in enquiry & contact) */
+  .form-section {
+    padding: 2em;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  input, select, textarea {
+    padding: 0.7em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 1.5em;
+    text-align: center;
+    margin-top: 2em;
+  }
+  
+  .footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+    gap: 2em;
+  }
+  
+  .footer-grid h4 {
+    margin-bottom: 0.5em;
+  }
+  
+  .footer-grid ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-grid ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.3em;
+  }
+  .testimonials {
+  background: var(--bg-light);
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.testimonial {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+.testimonial h4 {
+  margin-top: 1rem;
+  color: var(--brand-dark);
+}
+.cta-strip {
+  background: var(--brand-green);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.cta-strip h2 {
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+  
+  /* ------------------------ */
+/* 🔄 RESPONSIVE STYLING 🔄 */
+/* ------------------------ */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 0.5em;
+      margin-top: 1em;
+    }
+  
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-text, .hero-image {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .features {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+    }
+  
+    .feature {
+      width: 90%;
+    }
+  
+    .mission-vision {
+      flex-direction: column;
+    }
+  
+    .meal {
+      width: 45%;
+    }
+  
+    .footer-grid {
+      flex-direction: column;
+      gap: 1em;
+      text-align: center;
+    }
+  }
+  
+  /* Phones (480px and below) */
+  @media (max-width: 480px) {
+    .meal {
+      width: 100%;
+    }
+  
+    .btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  
+    form {
+      gap: 0.8em;
+    }
+  
+    input, select, textarea {
+      font-size: 1em;
+    }
+  
+    nav ul {
+      align-items: flex-start;
+    }
+  }
+  .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 960px) {
+  .menu-toggle { display: block; }
+  .main-nav { display: none; }
+  .main-nav.open { display: block; }
+}
+
